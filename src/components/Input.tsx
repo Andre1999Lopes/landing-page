@@ -45,7 +45,7 @@ const StyledInput = styled.input<IStyledProps>`
 	margin: 5px auto;
 
 	&:focus {
-		border-bottom: solid 4px red;
+		border-bottom: solid 4px #ac0917;;
 	}
 
 	&:focus + span{

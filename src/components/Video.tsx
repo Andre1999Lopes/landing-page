@@ -31,6 +31,7 @@ export default function Video (props:IProps):JSX.Element {
 				autoPlay
 				loop
 				muted
+				preload='auto'
 			>
 				<source src={video} type='video/mp4' />
 			</video>
