@@ -34,13 +34,12 @@ const StyledDiv = styled.div`
 
 interface IProps {
 	message: string,
-	ref: React.RefObject<HTMLDivElement>,
 	isActive: boolean
 }
 
-export default function Snackbar({ message, ref, isActive }:IProps):JSX.Element {
+export default function Snackbar({ message, isActive }:IProps):JSX.Element {
 	return(
-		<StyledDiv ref={ref} className={ isActive ? 'show' : '' }>
+		<StyledDiv className={ isActive ? 'show' : '' }>
 			{message}
 		</StyledDiv>
 	);

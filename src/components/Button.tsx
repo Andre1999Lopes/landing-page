@@ -9,6 +9,7 @@ const StyledButton = styled.p`
 	color: black;
 	font-family: 'Trajan';
 	font-size: 24px;
+	font-weight: bold;
 	border-radius: 5px;
 	transition: all 200ms ease;
 	user-select: none;
