@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Img = styled.img`
 	display: inline-block;
-	margin: 10px;
+	margin: 0.5rem;
 `;
 
 export default function Logo ():JSX.Element {
@@ -13,7 +13,7 @@ export default function Logo ():JSX.Element {
 			src={svg}
 			alt='logo'
 			style = {{
-				width: '100px'
+				width: '8%'
 			}}
 		/>
 	);

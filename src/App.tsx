@@ -22,11 +22,11 @@ const StyledContent = styled.div`
 `;
 
 const StyledWrapper = styled.div`
-	width: 480px;
-	padding: 30px;
+	width: 40%;
+	padding: 2rem;
 	background-color: #646363;
-	box-shadow: 0px 0px 5px 5px #444444;
-	margin: 20px auto;
+	box-shadow: 0 0 .4rem .4rem #444444;
+	margin: 2rem auto;
 	border-radius: 15px;
 `;
 
@@ -35,13 +35,13 @@ const StyledTitle = styled.p`
 	font-size: 50px;
 	width: 40%;
 	text-align: center;
-	margin: 20px auto 60px;
+	margin: 0.5em auto 1.2em;
 `;
 
 const StyledP = styled.p`
 	font-family: 'Trajan';
 	text-align: center;
-	margin: 20px auto 60px;
+	margin: 1em auto 1.5em;
 	font-size: 200%;
 `;
 
@@ -92,7 +92,7 @@ function App():JSX.Element {
 						<Header />
 						<StyledTitle>{'A Black Friday\nestá chegando'}</StyledTitle>
 						<Timer />
-						<StyledP style={{marginTop: '60px'}}>Até 80% de desconto em todas as filiais de Westeros!</StyledP>
+						<StyledP style={{marginTop: '1.8em'}}>Até 80% de desconto em todas as filiais de Westeros!</StyledP>
 						<StyledWrapper>
 							<StyledP style={{fontSize:'100%'}}>Quer receber notificações sobre as ofertas antes de todos? Deixe seu e-mail abaixo que nós enviaremos!</StyledP>
 							<Input

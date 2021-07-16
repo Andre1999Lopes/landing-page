@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 100px;
+	height: 15%;
 
 	a {
 		text-decoration: none;
@@ -37,11 +37,11 @@ const StyledUl = styled.ul`
 const StyledLi = styled.li`
 	font-family: 'Trajan';
 	border: 1px solid white;
-	margin: 0 15px;
+	margin: 0 1.5em;
 	box-sizing: border-box;
 	background-color: #00003a;
 	cursor: pointer;
-	padding: 16px 24px;
+	padding: 1em 1.5em;
 	font-size: 16px;
 	outline: none;
 	border-radius: 5px;

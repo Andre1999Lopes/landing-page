@@ -2,13 +2,13 @@ import React, { MouseEventHandler } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.p`
-	width: 300px;
-	margin: 20px auto;
-	padding: 5px;
+	width: 20%;
+	margin: 1rem auto;
+	padding: 0.5rem;
 	background-color: white;
 	color: black;
 	font-family: 'Trajan';
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	border-radius: 5px;
 	transition: all 200ms ease;
