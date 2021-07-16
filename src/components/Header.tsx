@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Logo from './Logo';
 
 const StyledHeader = styled.header`
-	background: rgba(0,0,0,.8);
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	height: 100px;
 
 	a {
@@ -35,6 +39,7 @@ const StyledLi = styled.li`
 	border: 1px solid white;
 	margin: 0 15px;
 	box-sizing: border-box;
+	background-color: #00003a;
 	cursor: pointer;
 	padding: 16px 24px;
 	font-size: 16px;
@@ -53,6 +58,7 @@ export default function Header():JSX.Element {
 	return (
 		<>
 			<StyledHeader>
+				<Logo />
 				<nav>
 					<StyledUl>
 						<StyledLi>Home</StyledLi>

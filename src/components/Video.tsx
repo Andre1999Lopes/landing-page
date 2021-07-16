@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import video from '../assets/videos/snow3.mp4';
 
 const StyledContainer = styled.div`
-	position: relative;
+	position: fixed;
   height: 100%;
-  overflow: hidden;
 	margin: 0;
 	padding: 0;
 `;

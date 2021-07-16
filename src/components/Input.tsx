@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 const StyledWrapper = styled.div`
 	position: relative;
-	width: 450px;
+	width: 480px;
 	margin: 30px auto;
 	textarea {
 		min-height: 150px;
@@ -12,7 +12,7 @@ const StyledWrapper = styled.div`
 
 const StyledSpan = styled.span`
 	color: black;
-	height: 55px;
+	height: 70px;
 	position: absolute;
 	top: 0;
 	left: 16px;
@@ -30,15 +30,19 @@ const StyledSpan = styled.span`
 `;
 
 const StyledInput = styled.input<IStyledProps>`
+	box-sizing: border-box;
+	background-color: darkgray;
 	display: inline-block;
 	padding: 5px 15px;
 	outline: none;
-	height: 40px;
+	height: 60px;
 	width: 100%;
 	font-size: 15px;
 	border-radius: 5px;
-	border-bottom: 4px solid white;
+	border: none;
+	border-bottom: 4px solid darkgray;
 	transition: all 300ms ease;
+	margin: 5px auto;
 
 	&:focus {
 		border-bottom: solid 4px red;

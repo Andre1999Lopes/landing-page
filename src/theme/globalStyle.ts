@@ -14,7 +14,6 @@ const globalStyle = createGlobalStyle`
 		};
 		color: white;
 		height: 100vh;
-		overflow-y: hidden;
 	}
 `;
 

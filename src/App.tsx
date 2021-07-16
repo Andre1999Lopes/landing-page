@@ -17,14 +17,31 @@ const StyledContent = styled.div`
   height: 100%;
   padding: 0;
 	text-align: center;
+	overflow-y: auto;
 `;
 
-const StyledP = styled.p`
+const StyledWrapper = styled.div`
+	width: 480px;
+	padding: 30px;
+	background-color: #646363;
+	box-shadow: 0px 0px 5px 5px #444444;
+	margin: 20px auto;
+	border-radius: 15px;
+`;
+
+const StyledTitle = styled.p`
 	font-family: 'Trajan';
 	font-size: 50px;
 	width: 40%;
 	text-align: center;
-	margin: 20px auto;
+	margin: 20px auto 60px;
+`;
+
+const StyledP = styled.p`
+	font-family: Trajan;
+	text-align: center;
+	margin: 20px auto 60px;
+	font-size: 200%;
 `;
 
 function App():JSX.Element {
@@ -47,6 +64,7 @@ function App():JSX.Element {
 			setLocalStorage('userEmail', emailInputRef.current.value);
 			setLocalStorage('userName', nameInputRef.current.value);
 			console.log(localStorage.getItem('userEmail'));
+			console.log(localStorage.getItem('userName'));
 		}
 	};
 
@@ -57,33 +75,26 @@ function App():JSX.Element {
 				<Video>
 					<StyledContent>
 						<Header />
-						<StyledP>{'A Black Friday\nestá chegando'}</StyledP>
+						<StyledTitle>{'A Black Friday\nestá chegando'}</StyledTitle>
 						<Timer />
-						{/* <StyledWrapper> */}
-						{/* <label> */}
-						<Input
-							reference={nameInputRef}
-							name={'name'}
-							value={nameValue}
-							placeholder={'Nome completo'}
-							onChange={handleChange}
-						/>
-						{/* <StyledSpan>Nome completo</StyledSpan>
-							</label> */}
-						{/* </StyledWrapper>
-						<StyledWrapper> */}
-						{/* <label> */}
-						<Input
-							reference={emailInputRef}
-							name={'email'}
-							value={emailValue}
-							placeholder={'Email'}
-							onChange={handleChange}
-						/>
-						{/* <StyledSpan>Email</StyledSpan> */}
-						{/* </label> */}
-						{/* </StyledWrapper> */}
-						{/* <StyledButton onClick={handleClick} /> */}
+						<StyledP>Até 80% de desconto em todas as filiais de Westeros!</StyledP>
+						<StyledWrapper>
+							<StyledP style={{fontSize:'100%'}}>Quer receber notificações sobre as ofertas antes de todos? Deixe seu e-mail abaixo que nós enviaremos!</StyledP>
+							<Input
+								reference={nameInputRef}
+								name={'name'}
+								value={nameValue}
+								placeholder={'Nome completo'}
+								onChange={handleChange}
+							/>
+							<Input
+								reference={emailInputRef}
+								name={'email'}
+								value={emailValue}
+								placeholder={'Email'}
+								onChange={handleChange}
+							/>
+						</StyledWrapper>
 						<Button onClick={handleClick} ></Button>
 					</StyledContent>
 				</Video>

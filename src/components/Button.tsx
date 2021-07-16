@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const StyledButton = styled.p`
 	width: 300px;
-	margin: auto;
+	margin: 20px auto;
+	padding: 5px;
 	background-color: white;
 	color: black;
 	font-family: 'Trajan';
