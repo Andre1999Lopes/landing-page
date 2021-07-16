@@ -10,6 +10,13 @@ const StyledContainer = styled.div`
 	padding: 0;
 `;
 
+const Flare = styled.div`
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 255, .15);
+`;
+
 interface IProps {
 	children: ReactChild[] | ReactChild
 }
@@ -17,6 +24,7 @@ interface IProps {
 export default function Video (props:IProps):JSX.Element {
 	return (
 		<StyledContainer>
+			<Flare />
 			<video
 				style={{
 					width: '100vw'
