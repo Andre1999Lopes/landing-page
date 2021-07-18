@@ -22,11 +22,11 @@ const StyledContent = styled.div`
 `;
 
 const StyledWrapper = styled.div`
-	width: 480px;
-	padding: 30px;
+	width: 40%;
+	padding: 20px;
 	background-color: #646363;
-	box-shadow: 0px 0px 5px 5px #444444;
-	margin: 20px auto;
+	box-shadow: 0 0 8px 8px #444444;
+	margin: 32px auto;
 	border-radius: 15px;
 `;
 
@@ -35,13 +35,13 @@ const StyledTitle = styled.p`
 	font-size: 50px;
 	width: 40%;
 	text-align: center;
-	margin: 20px auto 60px;
+	margin: 25px auto 60px;
 `;
 
 const StyledP = styled.p`
 	font-family: 'Trajan';
 	text-align: center;
-	margin: 20px auto 60px;
+	margin: 16px auto 24px;
 	font-size: 200%;
 `;
 

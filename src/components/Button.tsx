@@ -2,20 +2,21 @@ import React, { MouseEventHandler } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.p`
-	width: 300px;
+	width: 200px;
 	margin: 20px auto;
-	padding: 5px;
+	padding: 10px;
 	background-color: white;
 	color: black;
 	font-family: 'Trajan';
-	font-size: 24px;
+	font-size: 25px;
+	font-weight: bold;
 	border-radius: 5px;
 	transition: all 200ms ease;
 	user-select: none;
 
 	&:hover {
 		cursor: pointer;
-		background-color: lightgrey;
+		background-color: darkgrey;
 	}
 
 	&:active {

@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 
 const StyledWrapper = styled.div`
 	position: relative;
-	width: 480px;
-	margin: 30px auto;
+	width: 80%;
+	margin: 32px auto;
 	textarea {
 		min-height: 150px;
 	}
@@ -15,17 +15,13 @@ const StyledSpan = styled.span`
 	height: 70px;
 	position: absolute;
 	top: 0;
-	left: 16px;
+	left: 25px;
 	pointer-events: none;
-
 	display: flex;
 	align-items: center;
-
 	transform-origin: 0% 0%;
 	font-size: 25px;
 	font-style: normal;
-	font-weight: 300%;
-
 	transition: .1s ease-in-out;
 `;
 
@@ -33,7 +29,7 @@ const StyledInput = styled.input<IStyledProps>`
 	box-sizing: border-box;
 	background-color: darkgray;
 	display: inline-block;
-	padding: 5px 15px;
+	padding: 15px 25px;
 	outline: none;
 	height: 60px;
 	width: 100%;
@@ -42,20 +38,20 @@ const StyledInput = styled.input<IStyledProps>`
 	border: none;
 	border-bottom: 4px solid darkgray;
 	transition: all 300ms ease;
-	margin: 5px auto;
+	margin: 0.3em auto;
 
 	&:focus {
-		border-bottom: solid 4px red;
+		border-bottom: solid 4px #ac0917;
 	}
 
 	&:focus + span{
-		transform: scale(.6) translateY(-10px);
+		transform: scale(.6) translateY(-0.5em);
 	}
 
 	${({ hasValue }) => 
 		hasValue && css`
 			& + span{
-				transform: scale(.6) translateY(-10px);
+				transform: scale(.6) translateY(-0.5em);
 			}
 		`
 }

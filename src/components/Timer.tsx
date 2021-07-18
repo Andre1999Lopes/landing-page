@@ -3,9 +3,9 @@ import moment from 'moment';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
-	width: 40px;
-	height: 40px;
-	margin: 20px auto;
+	width: 24px;
+	height: 24px;
+	margin: 16px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -13,6 +13,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledNumbers = styled.p`
+	font-size: 30px;
 	font-family: 'Trajan';
 	color: #ac0917;
 	display: flex;
@@ -25,8 +26,6 @@ const StyledNumbers = styled.p`
 	background: rgba(255,255,255,.5);
 	min-width: 80px;
 	margin: 60px 5px;
-	margin-bottom: 60px;
-	font-size: 30px;
 `;
 
 function Timer():JSX.Element {
